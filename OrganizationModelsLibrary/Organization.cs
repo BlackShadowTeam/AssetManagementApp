@@ -17,7 +17,7 @@ namespace OrganizationModelsLibrary
         /// Organization Name
         /// Required Propriety
         /// </summary>
-        [DisplayName("Organization Name")]
+        [DisplayName("Name")]
         [Required(ErrorMessage = "Please Insert Organization Name")]
         public string Name { get; set; }
 

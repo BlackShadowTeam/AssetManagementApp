@@ -38,7 +38,8 @@ namespace AssetManagementUI
                 "~/BaseDesignAssets/css/fonts.googleapis.com.css",
                 "~/BaseDesignAssets/css/ace.min.css",
                 "~/BaseDesignAssets/css/ace-skins.min.css",
-                "~/BaseDesignAssets/css/ace-rtl.min.css"));
+                "~/BaseDesignAssets/css/ace-rtl.min.css",
+                "~/Content/font-awesome.css"));
         }
     }
 }
