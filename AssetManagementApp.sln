@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetModelsLibrary", "Asset
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrganizationModelsLibrary", "OrganizationModelsLibrary\OrganizationModelsLibrary.csproj", "{AD74B19C-8F5E-42C4-B53A-C35BAEC9F951}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanResourceModelsLibrary", "HumanResourceModelsLibrary\HumanResourceModelsLibrary.csproj", "{08C1AE5D-2FE8-482E-B137-5DBC21DE589E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{AD74B19C-8F5E-42C4-B53A-C35BAEC9F951}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD74B19C-8F5E-42C4-B53A-C35BAEC9F951}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD74B19C-8F5E-42C4-B53A-C35BAEC9F951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C1AE5D-2FE8-482E-B137-5DBC21DE589E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C1AE5D-2FE8-482E-B137-5DBC21DE589E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C1AE5D-2FE8-482E-B137-5DBC21DE589E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C1AE5D-2FE8-482E-B137-5DBC21DE589E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,14 +1,15 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OrganizationModelsLibrary")]
+[assembly: AssemblyTitle("HumanResourceModelsLibrary")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OrganizationModelsLibrary")]
+[assembly: AssemblyProduct("HumanResourceModelsLibrary")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8a878674-b43a-4d2a-9f94-6c1e366981b8")]
+[assembly: Guid("8dfbc5ad-74e0-4bcc-92f6-07bb14bd0bce")]
 
 // Version information for an assembly consists of the following four values:
 //

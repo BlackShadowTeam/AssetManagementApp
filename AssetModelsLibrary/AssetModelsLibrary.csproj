@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssetEntry.cs" />
     <Compile Include="AssetGroup.cs" />
     <Compile Include="AssetLocation.cs" />
     <Compile Include="AssetManufacturer.cs" />
