@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using OrganizationModelsLibrary;
 
-namespace AssetModelsLibrary
+namespace AssetModelsLibrary.AssetSetup
 {
     public class AssetLocation
     {

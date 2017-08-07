@@ -44,10 +44,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AssetModelsLibrary\AssetModelsLibrary.csproj">
-      <Project>{69a0e6c4-2a5a-45eb-8b15-ca042e84f74f}</Project>
-      <Name>AssetModelsLibrary</Name>
-    </ProjectReference>
     <ProjectReference Include="..\OrganizationModelsLibrary\OrganizationModelsLibrary.csproj">
       <Project>{ad74b19c-8f5e-42c4-b53a-c35baec9f951}</Project>
       <Name>OrganizationModelsLibrary</Name>

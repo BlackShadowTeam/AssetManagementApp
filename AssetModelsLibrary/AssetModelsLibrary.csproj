@@ -40,20 +40,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssetEntry.cs" />
-    <Compile Include="AssetGroup.cs" />
-    <Compile Include="AssetLocation.cs" />
-    <Compile Include="AssetManufacturer.cs" />
-    <Compile Include="AssetModel.cs" />
-    <Compile Include="AssetType.cs" />
+    <Compile Include="AssetEntry\AssetEntry.cs" />
+    <Compile Include="AssetEntry\Attchment.cs" />
+    <Compile Include="AssetEntry\Note.cs" />
+    <Compile Include="AssetEntry\ServiceOrRepairing.cs" />
+    <Compile Include="AssetOpetation\CheckOut.cs" />
+    <Compile Include="AssetSetup\AssetGroup.cs" />
+    <Compile Include="AssetSetup\AssetLocation.cs" />
+    <Compile Include="AssetSetup\AssetManufacturer.cs" />
+    <Compile Include="AssetSetup\AssetModel.cs" />
+    <Compile Include="AssetSetup\AssetType.cs" />
+    <Compile Include="AssetEntry\Finance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HumanResourceModelsLibrary\HumanResourceModelsLibrary.csproj">
+      <Project>{08c1ae5d-2fe8-482e-b137-5dbc21de589e}</Project>
+      <Name>HumanResourceModelsLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OrganizationModelsLibrary\OrganizationModelsLibrary.csproj">
       <Project>{ad74b19c-8f5e-42c4-b53a-c35baec9f951}</Project>
       <Name>OrganizationModelsLibrary</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

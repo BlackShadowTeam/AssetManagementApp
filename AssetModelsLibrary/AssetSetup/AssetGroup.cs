@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace AssetModelsLibrary
+namespace AssetModelsLibrary.AssetSetup
 {
     /// <summary>
     /// Asset Group

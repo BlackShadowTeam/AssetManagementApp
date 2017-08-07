@@ -5,7 +5,7 @@ namespace OrganizationModelsLibrary
     /// <summary>
     /// Organization Vandor
     /// </summary>
-    class Vendor
+    public class Vendor
     {
         /// <summary>
         /// Primary Key
@@ -14,6 +14,7 @@ namespace OrganizationModelsLibrary
 
         /// <summary>
         /// Vendor Full Name
+        /// Required Proprity
         /// </summary>
         [Required]
         [Display(Name = "Name")]
@@ -21,6 +22,7 @@ namespace OrganizationModelsLibrary
 
         /// <summary>
         /// Vendor Short Name
+        /// Required Proprity
         /// </summary>
         [Required]
         [Display(Name = "Short Name")]
@@ -28,6 +30,7 @@ namespace OrganizationModelsLibrary
 
         /// <summary>
         /// Vendor Contact No
+        /// Required Proprity
         /// </summary>
         [Required]
         [Display(Name = "Contact No")]
