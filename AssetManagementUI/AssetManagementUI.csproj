@@ -309,7 +309,6 @@
     <Content Include="Views\AssetModels\Create.cshtml" />
     <Content Include="Views\AssetLocations\Create.cshtml" />
     <Content Include="Views\Organizations\Index.cshtml" />
-    <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\AssetAudit\Index.cshtml" />
     <Content Include="Views\AssetEntrys\Index.cshtml" />
