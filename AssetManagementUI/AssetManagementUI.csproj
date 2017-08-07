@@ -275,15 +275,22 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AssetAuditController.cs" />
+    <Compile Include="Controllers\AssetEntrysController.cs" />
     <Compile Include="Controllers\AssetGroupsController.cs" />
     <Compile Include="Controllers\AssetLocationsController.cs" />
     <Compile Include="Controllers\AssetManufacturersController.cs" />
     <Compile Include="Controllers\AssetModelsController.cs" />
     <Compile Include="Controllers\AssetTypesController.cs" />
     <Compile Include="Controllers\BranchsController.cs" />
+    <Compile Include="Controllers\CheckInController.cs" />
+    <Compile Include="Controllers\CheckOutController.cs" />
     <Compile Include="Controllers\DepartmentsController.cs" />
     <Compile Include="Controllers\DesignationsController.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OrganizationsController.cs" />
+    <Compile Include="Controllers\VendorsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -301,6 +308,23 @@
     <Content Include="Views\AssetManufacturers\Create.cshtml" />
     <Content Include="Views\AssetModels\Create.cshtml" />
     <Content Include="Views\AssetLocations\Create.cshtml" />
+    <Content Include="Views\Organizations\Index.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\AssetAudit\Index.cshtml" />
+    <Content Include="Views\AssetEntrys\Index.cshtml" />
+    <Content Include="Views\AssetGroups\Index.cshtml" />
+    <Content Include="Views\AssetLocations\Index.cshtml" />
+    <Content Include="Views\AssetManufacturers\Index.cshtml" />
+    <Content Include="Views\AssetModels\Index.cshtml" />
+    <Content Include="Views\AssetTypes\Index.cshtml" />
+    <Content Include="Views\Branchs\Index.cshtml" />
+    <Content Include="Views\CheckIn\Index.cshtml" />
+    <Content Include="Views\CheckOut\Index.cshtml" />
+    <Content Include="Views\Departments\Index.cshtml" />
+    <Content Include="Views\Designations\Index.cshtml" />
+    <Content Include="Views\Employees\Index.cshtml" />
+    <Content Include="Views\Vendors\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -311,6 +335,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\AssetEntry\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AssetModelsLibrary\AssetModelsLibrary.csproj">

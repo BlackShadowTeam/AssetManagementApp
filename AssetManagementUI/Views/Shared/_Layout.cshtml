@@ -1,4 +1,5 @@
 ﻿@using System.Web.Optimization
+@using AssetManagementUI.Controllers
 <!DOCTYPE html>
 
 <html>
@@ -121,18 +122,66 @@
 
             <ul class="nav nav-list">
                 <li class="">
-                    <a href="#">
+                    <a href="@Url.Action("Index", "Home")">
                         <i class="menu-icon fa fa-tachometer"></i>
                         <span class="menu-text"> Dashboard </span>
                     </a>
                     <b class="arrow"></b>
+                    @*<i class="menu-icon fa fa-tachometer"></i>
+                    @Html.ActionLink(" Dashboard ", "Index", "Home")*@
                 </li>
-
-
+                
+                @* ----------------------Start Operation Manu-----------------  *@
                 <li class="">
                     <a href="#" class="dropdown-toggle">
                         <i class="menu-icon fa fa-list"></i>
-                        <span class="menu-text"> Tables </span>
+                        <span class="menu-text"> Asset Operation </span>
+                        <b class="arrow fa fa-angle-down"></b>
+                    </a>
+                    <b class="arrow"></b>
+                    <ul class="submenu">
+                        <li class="">
+                            <a href="@Url.Action("Index", "CheckOut")">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Check Out
+                            </a>
+                            <b class="arrow"></b>
+                        </li>
+                        
+                        <li class="">
+                            <a href="@Url.Action("Index", "CheckIn")">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Check In
+                            </a>
+                            <b class="arrow"></b>
+                        </li>
+                        
+                        <li class="">
+                            <a href="@Url.Action("Index", "AssetAudit")">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Asset Audit
+                            </a>
+                            <b class="arrow"></b>
+                        </li>
+
+                        <li class="">
+                            <a href="@Url.Action("Index", "AssetEntrys")">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Asset Entry
+                            </a>
+                            <b class="arrow"></b>
+                        </li>
+                    </ul>
+                </li>
+                @* ------------------------End Operation Manu------------------  *@
+            
+
+
+                @* ----------------------Start Organization Setup Manu-----------------  *@
+                <li class="">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="menu-icon fa fa-list"></i>
+                        <span class="menu-text"> Organization Setup </span>
 
                         <b class="arrow fa fa-angle-down"></b>
                     </a>
@@ -141,24 +190,117 @@
 
                     <ul class="submenu">
                         <li class="">
-                            <a href="#">
+                            <a href="@Url.Action("Index", "Organizations")">
                                 <i class="menu-icon fa fa-caret-right"></i>
-                                Simple &amp; Dynamic
+                                Organization
                             </a>
-
                             <b class="arrow"></b>
                         </li>
 
                         <li class="">
-                            <a href="#">
+                            <a href="@Url.Action("Index", "Branchs")">
                                 <i class="menu-icon fa fa-caret-right"></i>
-                                jqGrid plugin
+                                Branch
                             </a>
-
+                            <b class="arrow"></b>
+                        </li>
+                        
+                        <li class="">
+                            <a href="@Url.Action("Index", "AssetLocations")">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Asset Location
+                            </a>
                             <b class="arrow"></b>
                         </li>
                     </ul>
                 </li>
+                @* ------------------------End Organization Setup Manu------------------  *@
+            
+            
+                @* ----------------------Start Human Resource Setup Manu-----------------  *@
+                <li class="">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="menu-icon fa fa-list"></i>
+                        <span class="menu-text"> Human Resource </span>
+                        <b class="arrow fa fa-angle-down"></b>
+                    </a>
+                    <b class="arrow"></b>
+                    <ul class="submenu">
+                        <li class="">
+                            <a href="@Url.Action("Index", "Employees")">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Employee
+                            </a>
+                            <b class="arrow"></b>
+                        </li>
+                    </ul>
+                </li>
+                @* ------------------------End Human Resource Setup Manu------------------  *@
+            
+            
+                @* ----------------------Start Purchase Setup Manu-----------------  *@
+                <li class="">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="menu-icon fa fa-list"></i>
+                        <span class="menu-text"> Purchase Setup </span>
+                        <b class="arrow fa fa-angle-down"></b>
+                    </a>
+                    <b class="arrow"></b>
+                    <ul class="submenu">
+                        <li class="">
+                            <a href="@Url.Action("Index", "Vendors")">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Vendor
+                            </a>
+                            <b class="arrow"></b>
+                        </li>
+                    </ul>
+                </li>
+                @* ------------------------End Purchase Setup Manu------------------  *@
+            
+
+                @* --------------------------Start Asset Setup Manu--------------------  *@
+                <li class="">
+                    <a href="#" class="dropdown-toggle">
+                        <i class="menu-icon fa fa-list"></i>
+                        <span class="menu-text"> Asset Setup </span>
+                        <b class="arrow fa fa-angle-down"></b>
+                    </a>
+                    <b class="arrow"></b>
+                    <ul class="submenu">
+                        <li class="">
+                            <a href="@Url.Action("Index", "AssetTypes")">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Asset Type
+                            </a>
+                            <b class="arrow"></b>
+                        </li>
+                        <li class="">
+                            <a href="@Url.Action("Index", "AssetGroups")">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Asset Group
+                            </a>
+                            <b class="arrow"></b>
+                        </li>
+
+                        <li class="">
+                            <a href="@Url.Action("Index", "AssetManufacturers")">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Asset Manufacturer
+                            </a>
+                            <b class="arrow"></b>
+                        </li>
+                        
+                        <li class="">
+                            <a href="@Url.Action("Index", "AssetModels")">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Asset Model
+                            </a>
+                            <b class="arrow"></b>
+                        </li>
+                    </ul>
+                </li>
+                @* -----------------End Asset Setup Manu------------------------  *@
             </ul> <!-- /.nav-list -->
 
             <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
