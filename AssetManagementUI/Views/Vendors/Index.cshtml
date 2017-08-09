@@ -1,8 +1,15 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Vendor";
+    ViewBag.ManuHead = "Purchase Setup";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Index</h2>
 
+@section scripts
+{
+    <script type="text/javascript">
+        $("#parchaseManu").show();
+    </script>
+}

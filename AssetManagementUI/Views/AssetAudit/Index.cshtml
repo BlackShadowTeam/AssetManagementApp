@@ -1,8 +1,15 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Asset Audit";
+    ViewBag.ManuHead = "Asset Operation";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Index</h2>
 
+@section scripts
+{
+    <script type="text/javascript">
+        $("#operationModelManue").show();
+    </script>
+}

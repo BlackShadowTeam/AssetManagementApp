@@ -1,9 +1,74 @@
 ﻿@model OrganizationModelsLibrary.Organization
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Organization";
+    ViewBag.ManuHead = "Organization Setup";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<div class="col-sm-12 col-md-12">
+    <h3 class="header blue lighter smaller">
+        <i class="ace-icon fa fa-folder-o smaller-90"></i>
+        Organizations
+    </h3>
+    
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#searchManu">Search</a></li>
+        <li><a data-toggle="tab" href="#createMenu" id="createLink">Create</a></li>
+        <li><a data-toggle="tab" href="#updateMenu">Update</a></li>
+        @*<li><a data-toggle="tab" href="#menu3">Menu 3</a></li>*@
+    </ul>
 
+    <div class="tab-content">
+        <div id="searchManu" class="tab-pane fade in active"> @*Start Search Tab*@
+            <h3>Organization Search</h3>
+            <div class="row">
+                <div class="col-md-5 col-sm-8">
+                    <div class="input-group">
+                        <input id="searchTextBox" class="form-control" type="text" placeholder="Search by Name, Short Name, Code."/>
+                        <span class="input-group-btn">
+                            <button id="searchButton" class="btn btn-sm btn-info" type="button"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+                        </span>
+                    </div>
+                </div> @* End Search*@ 
+            </div>
+            
+            
+            <div class="row">
+                <div id="searchMainBody" class="col-md-offset-2 col-md-8">
+                    
+                </div>
+            </div>
+        </div> @*End Search Tab*@
+        
+        
+        
+
+        <div id="createMenu" class="tab-pane fade">
+            <h3>Create</h3>
+            <div class="row">
+                <div id="createMainBody" class="col-md-offset-2 col-md-8">
+
+                </div>
+            </div>
+        </div> @*End Create Tab*@
+
+        <div id="updateMenu" class="tab-pane fade">
+            <h3>Update</h3>
+            <div class="row">
+                <div id="updateMainBody" class="col-md-offset-2 col-md-8">
+
+                </div>
+            </div>
+        </div> @*End Update Tab*@
+    </div>
+</div><!-- ./col -->
+
+
+@section scripts
+{
+    <script src="~/Scripts/FormScript/organization.js"></script>
+    <script type="text/javascript">
+        $("#organizationManu").show();
+    </script>
+}

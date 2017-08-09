@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using System.Web.UI.WebControls.WebParts;
 
 namespace AssetManagementUI.Controllers
 {
@@ -10,9 +11,16 @@ namespace AssetManagementUI.Controllers
             return View();
         }
 
-        public ActionResult Create()
+        //public ActionResult Create()
+        //{
+        //    return View();
+        //}
+
+
+        [HttpGet]
+        public PartialViewResult Create()
         {
-            return View();
+            return PartialView("PartialView/Organizations/_CreatePartial" );
         }
     }
 }

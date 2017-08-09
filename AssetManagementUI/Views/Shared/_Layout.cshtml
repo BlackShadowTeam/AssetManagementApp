@@ -31,7 +31,7 @@
                 <a href="#" class="navbar-brand">
                     <small>
                         <i class="fa fa-leaf"></i>
-                        Netsoft Bd
+                        Asset Management
                     </small>
                 </a>
             </div>
@@ -139,7 +139,7 @@
                         <b class="arrow fa fa-angle-down"></b>
                     </a>
                     <b class="arrow"></b>
-                    <ul class="submenu">
+                    <ul class="submenu" id="operationModelManue">
                         <li class="">
                             <a href="@Url.Action("Index", "CheckOut")">
                                 <i class="menu-icon fa fa-caret-right"></i>
@@ -188,7 +188,7 @@
 
                     <b class="arrow"></b>
 
-                    <ul class="submenu">
+                    <ul class="submenu" id="organizationManu">
                         <li class="">
                             <a href="@Url.Action("Index", "Organizations")">
                                 <i class="menu-icon fa fa-caret-right"></i>
@@ -225,7 +225,7 @@
                         <b class="arrow fa fa-angle-down"></b>
                     </a>
                     <b class="arrow"></b>
-                    <ul class="submenu">
+                    <ul class="submenu" id="humanResourceManu">
                         <li class="">
                             <a href="@Url.Action("Index", "Employees")">
                                 <i class="menu-icon fa fa-caret-right"></i>
@@ -246,7 +246,7 @@
                         <b class="arrow fa fa-angle-down"></b>
                     </a>
                     <b class="arrow"></b>
-                    <ul class="submenu">
+                    <ul class="submenu" id="parchaseManu">
                         <li class="">
                             <a href="@Url.Action("Index", "Vendors")">
                                 <i class="menu-icon fa fa-caret-right"></i>
@@ -267,7 +267,7 @@
                         <b class="arrow fa fa-angle-down"></b>
                     </a>
                     <b class="arrow"></b>
-                    <ul class="submenu">
+                    <ul class="submenu" id="assetSetupManu">
                         <li class="">
                             <a href="@Url.Action("Index", "AssetTypes")">
                                 <i class="menu-icon fa fa-caret-right"></i>
@@ -310,6 +310,34 @@
 
         <div class="main-content">
             <div class="main-content-inner">
+                
+                <div class="breadcrumbs ace-save-state" id="breadcrumbs">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="ace-icon fa fa-home home-icon"></i>
+                            <a href="@Url.Action("Index", "Home")">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#">@ViewBag.ManuHead</a>
+                        </li>
+                        <li class="active">@ViewBag.Title</li>
+                    </ul><!-- /.breadcrumb -->
+
+                    @*<div class="nav-search" id="nav-search">
+                        <form class="form-search">
+                            <span class="input-icon">
+                                <input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+                                <i class="ace-icon fa fa-search nav-search-icon"></i>
+                            </span>
+                        </form>
+                    </div>*@<!-- /.nav-search -->
+                </div>
+
+                
+                
+                
+
                 <div class="page-content">
                     <div class="ace-settings-container" id="ace-settings-container">
                         <div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
@@ -393,8 +421,8 @@
             <div class="footer-inner">
                 <div class="footer-content">
                     <span class="bigger-120">
-                        <span class="blue bolder">Netsoft</span>
-                        Application &copy; @DateTime.Now.ToString("yyyy")
+                        <span class="blue bolder">Black Shadow</span>
+                        &copy; @DateTime.Now.ToString("yyyy")
                     </span>
 
                     &nbsp; &nbsp;

@@ -266,6 +266,7 @@
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\FormScript\organization.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Web.config" />
@@ -324,6 +325,7 @@
     <Content Include="Views\Designations\Index.cshtml" />
     <Content Include="Views\Employees\Index.cshtml" />
     <Content Include="Views\Vendors\Index.cshtml" />
+    <Content Include="Views\Shared\PartialView\Organizations\_CreatePartial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -334,7 +336,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\AssetEntry\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AssetModelsLibrary\AssetModelsLibrary.csproj">
