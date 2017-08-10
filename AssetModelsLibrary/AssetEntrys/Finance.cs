@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using OrganizationModelsLibrary;
 
-namespace AssetModelsLibrary.AssetEntry
+namespace AssetModelsLibrary.AssetEntrys
 {
     /// <summary>
     /// Asset Finance

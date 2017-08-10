@@ -22,7 +22,7 @@ namespace AssetModelsLibrary.AssetOpetation
         public string Commants { get; set; }
 
         public int AssetEntrysId { get; set; }
-        public virtual List<AssetEntry.AssetEntry> AssetEntries { get; set; }
+        public virtual List<AssetEntrys.AssetEntry> AssetEntries { get; set; }
         
 
     }

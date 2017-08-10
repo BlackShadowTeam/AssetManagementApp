@@ -40,17 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssetEntry\AssetEntry.cs" />
-    <Compile Include="AssetEntry\Attchment.cs" />
-    <Compile Include="AssetEntry\Note.cs" />
-    <Compile Include="AssetEntry\ServiceOrRepairing.cs" />
+    <Compile Include="AssetEntrys\AssetEntry.cs" />
+    <Compile Include="AssetEntrys\Attchment.cs" />
+    <Compile Include="AssetEntrys\Note.cs" />
+    <Compile Include="AssetEntrys\ServiceOrRepairing.cs" />
     <Compile Include="AssetOpetation\CheckOut.cs" />
     <Compile Include="AssetSetup\AssetGroup.cs" />
     <Compile Include="AssetSetup\AssetLocation.cs" />
     <Compile Include="AssetSetup\AssetManufacturer.cs" />
     <Compile Include="AssetSetup\AssetModel.cs" />
     <Compile Include="AssetSetup\AssetType.cs" />
-    <Compile Include="AssetEntry\Finance.cs" />
+    <Compile Include="AssetEntrys\Finance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

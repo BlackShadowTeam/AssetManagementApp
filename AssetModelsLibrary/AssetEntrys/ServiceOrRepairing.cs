@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace AssetModelsLibrary.AssetEntry
+namespace AssetModelsLibrary.AssetEntrys
 {
     public class ServiceOrRepairing
     {
