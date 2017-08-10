@@ -13,5 +13,12 @@ namespace AssetManagementUI.Controllers
         {
             return View();
         }
+
+
+        [HttpGet]
+        public PartialViewResult Create()
+        {
+            return PartialView("PartialView/Employees/_CreatePartialView");
+        }
     }
 }

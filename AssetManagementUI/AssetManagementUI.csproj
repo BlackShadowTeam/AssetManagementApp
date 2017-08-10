@@ -274,7 +274,9 @@
     <Content Include="Scripts\FormScript\branch.js" />
     <Content Include="Scripts\FormScript\department.js" />
     <Content Include="Scripts\FormScript\designation.js" />
+    <Content Include="Scripts\FormScript\employee.js" />
     <Content Include="Scripts\FormScript\organization.js" />
+    <Content Include="Scripts\FormScript\vendor.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Web.config" />
@@ -333,6 +335,8 @@
     <Content Include="Views\Shared\PartialView\AssetGroups\_CreatePartialView.cshtml" />
     <Content Include="Views\Shared\PartialView\AssetManufacturers\_CreatePartialView.cshtml" />
     <Content Include="Views\Shared\PartialView\AssetModels\_CreatePartialView.cshtml" />
+    <Content Include="Views\Shared\PartialView\Employees\_CreatePartialView.cshtml" />
+    <Content Include="Views\Shared\PartialView\Vendors\_CreatePartialView.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -348,6 +352,10 @@
     <ProjectReference Include="..\AssetModelsLibrary\AssetModelsLibrary.csproj">
       <Project>{69a0e6c4-2a5a-45eb-8b15-ca042e84f74f}</Project>
       <Name>AssetModelsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HumanResourceModelsLibrary\HumanResourceModelsLibrary.csproj">
+      <Project>{08c1ae5d-2fe8-482e-b137-5dbc21de589e}</Project>
+      <Name>HumanResourceModelsLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="..\OrganizationModelsLibrary\OrganizationModelsLibrary.csproj">
       <Project>{ad74b19c-8f5e-42c4-b53a-c35baec9f951}</Project>
