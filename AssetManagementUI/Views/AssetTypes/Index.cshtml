@@ -5,10 +5,59 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<div class="col-sm-12 col-md-12">
+    <h3 class="header blue lighter smaller">
+        <i class="ace-icon fa fa-folder-o smaller-90"></i>
+        Asset Type
+    </h3>
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#listViewManu">List View</a></li>
+        <li><a data-toggle="tab" href="#createMenu" id="createLink">Create</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="listViewManu" class="tab-pane fade in active">
+            @*Start Search Tab*@
+            <h3>Type List</h3>
+            <div class="row">
+                <div class="col-md-5 col-sm-8">
+                    <div class="input-group">
+                        <input id="searchTextBox" class="form-control" type="text" placeholder="Search by Name, Short Name, Code." />
+                        <span class="input-group-btn">
+                            <button id="searchButton" class="btn btn-sm btn-info" type="button"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+                        </span>
+                    </div>
+                </div> @* End Search*@
+            </div>
+
+
+            <div class="row">
+                <div id="listViewMainBody" class="col-md-offset-2 col-md-8">
+
+                </div>
+            </div>
+        </div> @*End Search Tab*@
+
+
+
+
+        <div id="createMenu" class="tab-pane fade">
+            <h3>Create</h3>
+            <div class="row">
+                <div id="createMainBody" class="col-md-offset-2 col-md-8">
+
+                </div>
+            </div>
+        </div> @*End Create Tab*@
+    </div>
+</div><!-- ./col -->
+
 
 @section scripts
 {
+    <script src="~/Scripts/FormScript/assetType.js"></script>
+
     <script type="text/javascript">
         $("#assetSetupManu").show();
     </script>

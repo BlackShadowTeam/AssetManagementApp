@@ -1,27 +1,25 @@
-﻿@using System.Web.Optimization
-@model OrganizationModelsLibrary.Department
+﻿@model AssetModelsLibrary.AssetSetup.AssetLocation
 
-@{
-    ViewBag.Title = "Create";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
-
-
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
     <div class="row">
-        <div class="col-md-offset-3 col-md-6">
+        <div class="col-md-offset-2 col-md-8">
             <div class="form-horizontal">
-                <h2>Department</h2>
-                <hr />
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                 <div class="form-group">
                     @Html.LabelFor(model => model.OrganizationId, htmlAttributes: new { @class = "control-label col-md-3" })
                     <div class="col-md-9">
                         @Html.EditorFor(model => model.OrganizationId, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.OrganizationId, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.BranchId, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-9">
+                        @Html.EditorFor(model => model.BranchId, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.BranchId, "", new { @class = "text-danger" })
                     </div>
                 </div>
 
@@ -42,10 +40,10 @@
                 </div>
 
                 <div class="form-group">
-                    @Html.LabelFor(model => model.DepartmentCode, htmlAttributes: new { @class = "control-label col-md-3" })
+                    @Html.LabelFor(model => model.BranchCode, htmlAttributes: new { @class = "control-label col-md-3" })
                     <div class="col-md-9">
-                        @Html.EditorFor(model => model.DepartmentCode, new { htmlAttributes = new { @class = "form-control" } })
-                        @Html.ValidationMessageFor(model => model.DepartmentCode, "", new { @class = "text-danger" })
+                        @Html.EditorFor(model => model.BranchCode, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.BranchCode, "", new { @class = "text-danger" })
                     </div>
                 </div>
 
@@ -61,15 +59,8 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
-    
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}

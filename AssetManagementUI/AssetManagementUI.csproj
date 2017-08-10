@@ -266,6 +266,14 @@
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\FormScript\assetGroup.js" />
+    <Content Include="Scripts\FormScript\assetLocation.js" />
+    <Content Include="Scripts\FormScript\assetManufacturer.js" />
+    <Content Include="Scripts\FormScript\assetModel.js" />
+    <Content Include="Scripts\FormScript\assetType.js" />
+    <Content Include="Scripts\FormScript\branch.js" />
+    <Content Include="Scripts\FormScript\department.js" />
+    <Content Include="Scripts\FormScript\designation.js" />
     <Content Include="Scripts\FormScript\organization.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
@@ -300,15 +308,6 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="Views\Organizations\Create.cshtml" />
-    <Content Include="Views\Branchs\Create.cshtml" />
-    <Content Include="Views\Departments\Create.cshtml" />
-    <Content Include="Views\Designations\Create.cshtml" />
-    <Content Include="Views\AssetTypes\Create.cshtml" />
-    <Content Include="Views\AssetGroups\Create.cshtml" />
-    <Content Include="Views\AssetManufacturers\Create.cshtml" />
-    <Content Include="Views\AssetModels\Create.cshtml" />
-    <Content Include="Views\AssetLocations\Create.cshtml" />
     <Content Include="Views\Organizations\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\AssetAudit\Index.cshtml" />
@@ -326,6 +325,14 @@
     <Content Include="Views\Employees\Index.cshtml" />
     <Content Include="Views\Vendors\Index.cshtml" />
     <Content Include="Views\Shared\PartialView\Organizations\_CreatePartial.cshtml" />
+    <Content Include="Views\Shared\PartialView\Branchs\_CreatePartialView.cshtml" />
+    <Content Include="Views\Shared\PartialView\AssetLocations\_CreatePartialView.cshtml" />
+    <Content Include="Views\Shared\PartialView\Departments\_CreatePartialView.cshtml" />
+    <Content Include="Views\Shared\PartialView\Designations\_CreatePartiaView.cshtml" />
+    <Content Include="Views\Shared\PartialView\AssetTypes\_CreatePartialView.cshtml" />
+    <Content Include="Views\Shared\PartialView\AssetGroups\_CreatePartialView.cshtml" />
+    <Content Include="Views\Shared\PartialView\AssetManufacturers\_CreatePartialView.cshtml" />
+    <Content Include="Views\Shared\PartialView\AssetModels\_CreatePartialView.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

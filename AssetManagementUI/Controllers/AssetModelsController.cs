@@ -10,9 +10,15 @@ namespace AssetManagementUI.Controllers
             return View();
         }
 
-        public ActionResult Create()
+        //public ActionResult Create()
+        //{
+        //    return View();
+        //}
+
+        [HttpGet]
+        public PartialViewResult Create()
         {
-            return View();
+            return PartialView("PartialView/AssetModels/_CreatePartialView");
         }
     }
 }
