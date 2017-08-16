@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7A953669-F524-4FA9-BE05-C3040996BBC4}</ProjectGuid>
+    <ProjectGuid>{9B587512-325B-4A08-BBEF-7B55F090E931}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OrgnationGetwaysLibrary</RootNamespace>
-    <AssemblyName>OrgnationGetwaysLibrary</AssemblyName>
+    <RootNamespace>OrgnationManagersLibrary</RootNamespace>
+    <AssemblyName>OrgnationManagersLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,16 +30,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -49,21 +39,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OrgnationGetway.cs" />
+    <Compile Include="OrgnationManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AssetDbContextLibrary\AssetDbContextLibrary.csproj">
-      <Project>{78815daf-e5d8-4077-aec9-78ab195a6bd5}</Project>
-      <Name>AssetDbContextLibrary</Name>
-    </ProjectReference>
     <ProjectReference Include="..\OrganizationModelsLibrary\OrganizationModelsLibrary.csproj">
       <Project>{ad74b19c-8f5e-42c4-b53a-c35baec9f951}</Project>
       <Name>OrganizationModelsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OrgnationGetwaysLibrary\OrgnationGetwaysLibrary.csproj">
+      <Project>{7a953669-f524-4fa9-be05-c3040996bbc4}</Project>
+      <Name>OrgnationGetwaysLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -305,6 +305,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708160846128_Create Organation.cs" />
+    <Compile Include="Migrations\201708160846128_Create Organation.Designer.cs">
+      <DependentUpon>201708160846128_Create Organation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AssetTrackingDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -346,7 +352,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AssetModelsLibrary\AssetModelsLibrary.csproj">
@@ -361,6 +366,15 @@
       <Project>{ad74b19c-8f5e-42c4-b53a-c35baec9f951}</Project>
       <Name>OrganizationModelsLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="..\OrgnationManagersLibrary\OrgnationManagersLibrary.csproj">
+      <Project>{9b587512-325b-4a08-bbef-7b55f090e931}</Project>
+      <Name>OrgnationManagersLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201708160846128_Create Organation.resx">
+      <DependentUpon>201708160846128_Create Organation.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,6 +1,11 @@
 ﻿@model OrganizationModelsLibrary.Organization
 
-@using (Html.BeginForm())
+@using (Ajax.BeginForm("Create", "Organizations", new AjaxOptions()
+{
+    HttpMethod = "POST",
+    OnSuccess = "StudentAdded",
+    OnFailure = "StudentAddFailed"
+}))
 {
     @Html.AntiForgeryToken()
     <div class="row">
