@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{08C1AE5D-2FE8-482E-B137-5DBC21DE589E}</ProjectGuid>
+    <ProjectGuid>{7A953669-F524-4FA9-BE05-C3040996BBC4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HumanResourceModelsLibrary</RootNamespace>
-    <AssemblyName>HumanResourceModelsLibrary</AssemblyName>
+    <RootNamespace>OrgnationGetwaysLibrary</RootNamespace>
+    <AssemblyName>OrgnationGetwaysLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -48,14 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Employee.cs" />
+    <Compile Include="OrgnationGetway.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\OrganizationModelsLibrary\OrganizationModelsLibrary.csproj">
-      <Project>{ad74b19c-8f5e-42c4-b53a-c35baec9f951}</Project>
-      <Name>OrganizationModelsLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
