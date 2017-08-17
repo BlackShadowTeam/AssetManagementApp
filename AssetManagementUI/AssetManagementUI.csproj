@@ -343,6 +343,7 @@
     <Content Include="Views\Shared\PartialView\AssetModels\_CreatePartialView.cshtml" />
     <Content Include="Views\Shared\PartialView\Employees\_CreatePartialView.cshtml" />
     <Content Include="Views\Shared\PartialView\Vendors\_CreatePartialView.cshtml" />
+    <Content Include="Views\AssetEntrys\Create.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

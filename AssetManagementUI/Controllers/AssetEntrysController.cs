@@ -9,5 +9,10 @@ namespace AssetManagementUI.Controllers
         {
             return View();
         }
+
+        public ActionResult Create()
+        {
+            return View();
+        }
     }
 }
