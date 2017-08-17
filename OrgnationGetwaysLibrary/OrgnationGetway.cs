@@ -1,7 +1,4 @@
-﻿using System.Data.Entity;
-using System.Linq;
-using System.Net;
-using AssetDbContextLibrary;
+﻿using AssetDbContextLibrary;
 using OrganizationModelsLibrary;
 
 namespace OrgnationGetwaysLibrary

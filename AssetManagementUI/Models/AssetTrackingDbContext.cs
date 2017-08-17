@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AssetModelsLibrary.AssetEntrys;
-using AssetModelsLibrary.AssetSetup;
-using HumanResourceModelsLibrary;
+﻿using System.Data.Entity;
 using OrganizationModelsLibrary;
 
 namespace AssetManagementUI.Models

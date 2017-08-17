@@ -58,7 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AssetDbContextLibrary\AssetDbContextLibrary.csproj">
-      <Project>{78815daf-e5d8-4077-aec9-78ab195a6bd5}</Project>
+      <Project>{1abb3666-5f83-4dff-839b-626935d7c4c2}</Project>
       <Name>AssetDbContextLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="..\OrganizationModelsLibrary\OrganizationModelsLibrary.csproj">

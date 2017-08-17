@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.Entity;
 using AssetModelsLibrary.AssetEntrys;
 using AssetModelsLibrary.AssetSetup;
 using HumanResourceModelsLibrary;
@@ -11,7 +6,7 @@ using OrganizationModelsLibrary;
 
 namespace AssetDbContextLibrary
 {
-    public class AssetTrackingDbContext:DbContext
+    public class AssetTrackingDbContext : DbContext
     {
         public DbSet<Organization> Organizations { get; set; }
         public DbSet<Branch> Branches { get; set; }
