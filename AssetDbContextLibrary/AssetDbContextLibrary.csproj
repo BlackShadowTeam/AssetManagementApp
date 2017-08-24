@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78815DAF-E5D8-4077-AEC9-78AB195A6BD5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AssetDbContextLibrary</RootNamespace>
+    <AssemblyName>AssetDbContextLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssetTrackingDbContext.cs" />
+    <Compile Include="Migrations\201708160601164_Create Orgnation.cs" />
+    <Compile Include="Migrations\201708160601164_Create Orgnation.Designer.cs">
+      <DependentUpon>201708160601164_Create Orgnation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708160601576_Create Branch.cs" />
+    <Compile Include="Migrations\201708160601576_Create Branch.Designer.cs">
+      <DependentUpon>201708160601576_Create Branch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708160602366_Create Asset Location.cs" />
+    <Compile Include="Migrations\201708160602366_Create Asset Location.Designer.cs">
+      <DependentUpon>201708160602366_Create Asset Location.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708160603280_Create Department.cs" />
+    <Compile Include="Migrations\201708160603280_Create Department.Designer.cs">
+      <DependentUpon>201708160603280_Create Department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708160604020_Create Designation.cs" />
+    <Compile Include="Migrations\201708160604020_Create Designation.Designer.cs">
+      <DependentUpon>201708160604020_Create Designation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708160604366_Create Employee.cs" />
+    <Compile Include="Migrations\201708160604366_Create Employee.Designer.cs">
+      <DependentUpon>201708160604366_Create Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708160605590_Create Vendor.cs" />
+    <Compile Include="Migrations\201708160605590_Create Vendor.Designer.cs">
+      <DependentUpon>201708160605590_Create Vendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708160606277_Create AssetType.cs" />
+    <Compile Include="Migrations\201708160606277_Create AssetType.Designer.cs">
+      <DependentUpon>201708160606277_Create AssetType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708160609030_Create AssetGroup.cs" />
+    <Compile Include="Migrations\201708160609030_Create AssetGroup.Designer.cs">
+      <DependentUpon>201708160609030_Create AssetGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708160610070_Create AssetManufacturer.cs" />
+    <Compile Include="Migrations\201708160610070_Create AssetManufacturer.Designer.cs">
+      <DependentUpon>201708160610070_Create AssetManufacturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708160610538_Create AssetModel.cs" />
+    <Compile Include="Migrations\201708160610538_Create AssetModel.Designer.cs">
+      <DependentUpon>201708160610538_Create AssetModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708160611393_Create AssetEntries.cs" />
+    <Compile Include="Migrations\201708160611393_Create AssetEntries.Designer.cs">
+      <DependentUpon>201708160611393_Create AssetEntries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AssetModelsLibrary\AssetModelsLibrary.csproj">
+      <Project>{69a0e6c4-2a5a-45eb-8b15-ca042e84f74f}</Project>
+      <Name>AssetModelsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HumanResourceModelsLibrary\HumanResourceModelsLibrary.csproj">
+      <Project>{08c1ae5d-2fe8-482e-b137-5dbc21de589e}</Project>
+      <Name>HumanResourceModelsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OrganizationModelsLibrary\OrganizationModelsLibrary.csproj">
+      <Project>{ad74b19c-8f5e-42c4-b53a-c35baec9f951}</Project>
+      <Name>OrganizationModelsLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201708160601164_Create Orgnation.resx">
+      <DependentUpon>201708160601164_Create Orgnation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708160601576_Create Branch.resx">
+      <DependentUpon>201708160601576_Create Branch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708160602366_Create Asset Location.resx">
+      <DependentUpon>201708160602366_Create Asset Location.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708160603280_Create Department.resx">
+      <DependentUpon>201708160603280_Create Department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708160604020_Create Designation.resx">
+      <DependentUpon>201708160604020_Create Designation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708160604366_Create Employee.resx">
+      <DependentUpon>201708160604366_Create Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708160605590_Create Vendor.resx">
+      <DependentUpon>201708160605590_Create Vendor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708160606277_Create AssetType.resx">
+      <DependentUpon>201708160606277_Create AssetType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708160609030_Create AssetGroup.resx">
+      <DependentUpon>201708160609030_Create AssetGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708160610070_Create AssetManufacturer.resx">
+      <DependentUpon>201708160610070_Create AssetManufacturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708160610538_Create AssetModel.resx">
+      <DependentUpon>201708160610538_Create AssetModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708160611393_Create AssetEntries.resx">
+      <DependentUpon>201708160611393_Create AssetEntries.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
