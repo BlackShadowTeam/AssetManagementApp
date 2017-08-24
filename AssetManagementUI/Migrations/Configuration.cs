@@ -1,15 +1,18 @@
 namespace AssetManagementUI.Migrations
 {
+    using System;
+    using System.Data.Entity;
     using System.Data.Entity.Migrations;
+    using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<AssetManagementUI.Models.AssetTrackingDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<AssetManagementUI.Models.AssetDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(AssetManagementUI.Models.AssetTrackingDbContext context)
+        protected override void Seed(AssetManagementUI.Models.AssetDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

@@ -1,4 +1,5 @@
-﻿@model OrganizationModelsLibrary.Organization
+﻿@using Microsoft.Ajax.Utilities
+@model IEnumerable<OrganizationModelsLibrary.Organization>
 
 @{
     ViewBag.Title = "Organization";
@@ -28,6 +29,62 @@
                             <button id="searchButton" class="btn btn-sm btn-info" type="button"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
                         </span>
                     </div>
+                
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table id="simple-table" class="table  table-bordered table-hover">
+
+                                <tr>
+                                    <th style="display: none">
+                                        @Html.DisplayNameFor(model => model.Id)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Name)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.ShortName)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Location)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Description)
+                                    </th>
+                                    <th></th>
+                                </tr>
+                               
+
+                                @foreach (var item in Model)
+                                {
+                                      
+                                    <tr>
+                                        @*<td id="@(modelItem =>item.Id)" style="display: none">
+                                            @Html.DisplayFor(modelItem => item.Id)
+                                        </td>*@
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Name)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.ShortName)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Location)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Description)
+                                        </td>
+                                        <td>
+                                            <button id=""></button>
+                                            @*@Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })*@
+                                        </td>
+                                    </tr>
+                                }
+
+                            </table>
+                        </div>
+                    </div>
                 </div> @* End Search*@ 
             </div>
             
@@ -56,8 +113,15 @@
 
 @section scripts
 {
+<script src="~/Scripts/DataTables/jquery.dataTables.js"></script>
     <script src="~/Scripts/FormScript/organization.js"></script>
+
     <script type="text/javascript">
         $("#organizationManu").show();
+
+
+        //$(document).ready(function () {
+        //    $('#dataTableList').DataTable();
+        //});
     </script>
 }

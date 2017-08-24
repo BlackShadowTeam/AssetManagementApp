@@ -57,6 +57,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AssetDatabaseContextLibrary\AssetDatabaseContextLibrary.csproj">
+      <Project>{71112c96-c1f4-489d-91bf-82d8fa6ad99d}</Project>
+      <Name>AssetDatabaseContextLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OrganizationModelsLibrary\OrganizationModelsLibrary.csproj">
       <Project>{ad74b19c-8f5e-42c4-b53a-c35baec9f951}</Project>
       <Name>OrganizationModelsLibrary</Name>
