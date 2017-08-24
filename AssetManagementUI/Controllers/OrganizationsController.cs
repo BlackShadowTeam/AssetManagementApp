@@ -1,13 +1,13 @@
-﻿using System.Web.Mvc;
-using OrganizationModelsLibrary;
+﻿using OrganizationModelsLibrary;
 using OrgnationManagersLibrary;
+using System.Web.Mvc;
 
 namespace AssetManagementUI.Controllers
 {
     public class OrganizationsController : Controller
     {
-       private readonly OrgnationManager _orgnationManager=new OrgnationManager();
-        
+        private readonly OrgnationManager _orgnationManager = new OrgnationManager();
+
         // GET: Organizations
         public ActionResult Index()
         {
@@ -17,7 +17,7 @@ namespace AssetManagementUI.Controllers
         [HttpGet]
         public PartialViewResult Create()
         {
-            return PartialView("PartialView/Organizations/_CreatePartial" );
+            return PartialView("PartialView/Organizations/_CreatePartial");
         }
 
         [HttpPost]
@@ -27,24 +27,13 @@ namespace AssetManagementUI.Controllers
         {
             if (ModelState.IsValid)
             {
-                int rowAffected = _orgnationManager.Save(aOrganization);
-                if (rowAffected>0)
-                {
-                    return PartialView("PartialView/Organizations/_CreatePartial");
-                }
+
+                return PartialView("PartialView/Organizations/_CreatePartial");
+
             }
             return View("Index");
         }
 
-        public string FindById()
-        {
-            string name="";
-            var orgnation = _orgnationManager.FindOrganizationById(1);
-            if (orgnation != null)
-            {
-                name = orgnation.Name;
-            }
-            return name;
-        }
+
     }
 }
