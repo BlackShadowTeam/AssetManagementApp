@@ -1,8 +1,8 @@
-﻿using System;
+﻿using AssetModelsLibrary.AssetSetup;
+using HumanResourceModelsLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using AssetModelsLibrary.AssetSetup;
-using HumanResourceModelsLibrary;
 
 namespace AssetModelsLibrary.AssetOpetation
 {
@@ -31,8 +31,8 @@ namespace AssetModelsLibrary.AssetOpetation
 
         [Display(Name = "Asset")]
         public int AssetEntrysId { get; set; }
-        public virtual List<AssetEntrys.AssetEntry> AssetEntries { get; set; }
-        
+        public virtual IEnumerable<AssetEntrys.AssetEntry> AssetEntries { get; set; }
+
 
     }
 }
