@@ -546,6 +546,10 @@
     <Compile Include="Migrations\201708241015041_Craeate Orgnation.Designer.cs">
       <DependentUpon>201708241015041_Craeate Orgnation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708250914020_Create Branch.cs" />
+    <Compile Include="Migrations\201708250914020_Create Branch.Designer.cs">
+      <DependentUpon>201708250914020_Create Branch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AssetDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -619,6 +623,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201708241015041_Craeate Orgnation.resx">
       <DependentUpon>201708241015041_Craeate Orgnation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708250914020_Create Branch.resx">
+      <DependentUpon>201708250914020_Create Branch.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

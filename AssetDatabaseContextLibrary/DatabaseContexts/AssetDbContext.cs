@@ -6,5 +6,8 @@ namespace AssetDatabaseContextLibrary.DatabaseContexts
     public class AssetDbContext : DbContext
     {
         public DbSet<Organization> Organizations { get; set; }
+
+        public DbSet<Branch> Branches { get; set; }
+
     }
 }
