@@ -550,6 +550,10 @@
     <Compile Include="Migrations\201708250914020_Create Branch.Designer.cs">
       <DependentUpon>201708250914020_Create Branch.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201708250953164_Create AssetLocation.cs" />
+    <Compile Include="Migrations\201708250953164_Create AssetLocation.Designer.cs">
+      <DependentUpon>201708250953164_Create AssetLocation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AssetDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -626,6 +630,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201708250914020_Create Branch.resx">
       <DependentUpon>201708250914020_Create Branch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708250953164_Create AssetLocation.resx">
+      <DependentUpon>201708250953164_Create AssetLocation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
