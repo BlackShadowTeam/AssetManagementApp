@@ -8,6 +8,18 @@ namespace OrgnationManagersLibrary
     {
         private readonly BranchGetway _branchGetway = new BranchGetway();
 
+        public bool IsShortNameExist(int? organizationId, string shortName)
+        {
+            bool isShortNameExist = false;
+
+            var aBranch = FindBranchByOrganizationAndShortName(organizationId, shortName);
+            if (aBranch != null)
+            {
+                isShortNameExist = true;
+            }
+            return isShortNameExist;
+        }
+
         public int Save(Branch aBranch)
         {
             return _branchGetway.Save(aBranch);
@@ -33,6 +45,10 @@ namespace OrgnationManagersLibrary
             return _branchGetway.FindBranchByShortName(shortName);
         }
 
+        public Branch FindBranchByOrganizationAndShortName(int? organizationId, string shortName)
+        {
+            return _branchGetway.FindBranchByOrganizationAndShortName(organizationId, shortName);
+        }
         public List<Branch> GetBranchByNameOrShortName(string searchInput)
         {
             return _branchGetway.GetBranchByNameOrShortName(searchInput);

@@ -40,6 +40,11 @@ namespace OrgnationGetwaysLibrary
             return aBranch;
         }
 
+        public Branch FindBranchByOrganizationAndShortName(int? organizationId, string shortName)
+        {
+            var aBranch = db.Branches.FirstOrDefault(c => c.OrganizationId == organizationId && c.ShortName == shortName);
+            return aBranch;
+        }
         public List<Branch> GetBranchByNameOrShortName(string searchInput)
         {
             var branchList = db.Branches.Where(c => c.Name == searchInput || c.ShortName == searchInput).ToList();
