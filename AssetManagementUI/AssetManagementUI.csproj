@@ -536,18 +536,11 @@
     <Compile Include="Controllers\DesignationsController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\Organizations1Controller.cs" />
     <Compile Include="Controllers\OrganizationsController.cs" />
     <Compile Include="Controllers\VendorsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201708241015041_Craeate Orgnation.cs" />
-    <Compile Include="Migrations\201708241015041_Craeate Orgnation.Designer.cs">
-      <DependentUpon>201708241015041_Craeate Orgnation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\AssetDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -583,11 +576,6 @@
     <Content Include="Views\AssetEntrys\Create.cshtml" />
     <Content Include="Views\CheckOut\Create.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Organizations1\Create.cshtml" />
-    <Content Include="Views\Organizations1\Delete.cshtml" />
-    <Content Include="Views\Organizations1\Details.cshtml" />
-    <Content Include="Views\Organizations1\Edit.cshtml" />
-    <Content Include="Views\Organizations1\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -597,6 +585,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AssetModelsLibrary\AssetModelsLibrary.csproj">
@@ -615,11 +604,6 @@
       <Project>{9b587512-325b-4a08-bbef-7b55f090e931}</Project>
       <Name>OrgnationManagersLibrary</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201708241015041_Craeate Orgnation.resx">
-      <DependentUpon>201708241015041_Craeate Orgnation.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

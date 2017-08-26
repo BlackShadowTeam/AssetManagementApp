@@ -5,14 +5,14 @@ namespace AssetDatabaseContextLibrary.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<AssetDatabaseContextLibrary.DatabaseContexts.AssetDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<AssetDatabaseContextLibrary.AssetDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(AssetDatabaseContextLibrary.DatabaseContexts.AssetDbContext context)
+        protected override void Seed(AssetDatabaseContextLibrary.AssetDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

@@ -7,13 +7,13 @@ namespace AssetDatabaseContextLibrary.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class CreateOrganization : IMigrationMetadata
+    public sealed partial class CreateAssetLocation : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateOrganization));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CreateAssetLocation));
         
         string IMigrationMetadata.Id
         {
-            get { return "201708241011119_Create Organization"; }
+            get { return "201708260810518_Create AssetLocation"; }
         }
         
         string IMigrationMetadata.Source

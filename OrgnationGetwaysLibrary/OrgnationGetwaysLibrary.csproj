@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BranchGetway.cs" />
     <Compile Include="OrgnationGetway.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -58,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AssetDatabaseContextLibrary\AssetDatabaseContextLibrary.csproj">
-      <Project>{71112c96-c1f4-489d-91bf-82d8fa6ad99d}</Project>
+      <Project>{65a19118-cf39-4d3d-9ac2-71fe50b842d4}</Project>
       <Name>AssetDatabaseContextLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="..\OrganizationModelsLibrary\OrganizationModelsLibrary.csproj">

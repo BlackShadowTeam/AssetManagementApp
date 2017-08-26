@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{71112C96-C1F4-489D-91BF-82D8FA6AD99D}</ProjectGuid>
+    <ProjectGuid>{65A19118-CF39-4D3D-9AC2-71FE50B842D4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssetDatabaseContextLibrary</RootNamespace>
@@ -48,10 +48,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatabaseContexts\AssetDbContext.cs" />
-    <Compile Include="Migrations\201708241011119_Create Organization.cs" />
-    <Compile Include="Migrations\201708241011119_Create Organization.Designer.cs">
-      <DependentUpon>201708241011119_Create Organization.cs</DependentUpon>
+    <Compile Include="AssetDbContext.cs" />
+    <Compile Include="Migrations\201708260809304_Create Organization and Branch.cs" />
+    <Compile Include="Migrations\201708260809304_Create Organization and Branch.Designer.cs">
+      <DependentUpon>201708260809304_Create Organization and Branch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201708260810518_Create AssetLocation.cs" />
+    <Compile Include="Migrations\201708260810518_Create AssetLocation.Designer.cs">
+      <DependentUpon>201708260810518_Create AssetLocation.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,14 +65,25 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AssetModelsLibrary\AssetModelsLibrary.csproj">
+      <Project>{69a0e6c4-2a5a-45eb-8b15-ca042e84f74f}</Project>
+      <Name>AssetModelsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HumanResourceModelsLibrary\HumanResourceModelsLibrary.csproj">
+      <Project>{08c1ae5d-2fe8-482e-b137-5dbc21de589e}</Project>
+      <Name>HumanResourceModelsLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OrganizationModelsLibrary\OrganizationModelsLibrary.csproj">
       <Project>{ad74b19c-8f5e-42c4-b53a-c35baec9f951}</Project>
       <Name>OrganizationModelsLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201708241011119_Create Organization.resx">
-      <DependentUpon>201708241011119_Create Organization.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201708260809304_Create Organization and Branch.resx">
+      <DependentUpon>201708260809304_Create Organization and Branch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201708260810518_Create AssetLocation.resx">
+      <DependentUpon>201708260810518_Create AssetLocation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
