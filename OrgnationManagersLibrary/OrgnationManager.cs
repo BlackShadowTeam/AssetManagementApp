@@ -21,24 +21,9 @@ namespace OrgnationManagersLibrary
             return isShortNameExist;
         }
 
-        public int Save(Organization aOrganization)
-        {
-            return _orgnationGetway.Save(aOrganization);
-        }
-
-        public int Update(Organization aOrganization)
-        {
-            return _orgnationGetway.Update(aOrganization);
-        }
-
-        public Organization FindOrganizationById(int? id)
+        public Organization FindOrganizationById(int id)
         {
             return _orgnationGetway.FindOrganizationById(id);
-        }
-
-        public Organization FindOrganizationByName(string name)
-        {
-            return _orgnationGetway.FindOrganizationByName(name);
         }
 
         public Organization FindOrganizationByShortName(string shortName)
@@ -46,14 +31,40 @@ namespace OrgnationManagersLibrary
             return _orgnationGetway.FindOrganizationByShortName(shortName);
         }
 
-        public List<Organization> GetOrganizationsByNameOrShortName(string searchInput)
+        public IEnumerable<Organization> FindOrganizationByName(string name)
         {
-            return _orgnationGetway.GetOrganizationsByNameOrShortName(searchInput);
+            return _orgnationGetway.FindOrganizationByName(name);
         }
 
-        public List<Organization> GetAllOrganization()
+        public IEnumerable<Organization> GetAllOrganization()
         {
-            return _orgnationGetway.GetAllOrganization();
+            return _orgnationGetway.GetAllOrganizations();
+        }
+
+
+        public int Save(Organization aOrganization)
+        {
+            return _orgnationGetway.Save(aOrganization);
+        }
+
+        public int SaveList(IEnumerable<Organization> organizations)
+        {
+            return _orgnationGetway.SaveList(organizations);
+        }
+
+        public int Update(Organization aOrganization)
+        {
+            return _orgnationGetway.Update(aOrganization);
+        }
+
+        public int Delete(Organization aOrganization)
+        {
+            return _orgnationGetway.Delete(aOrganization);
+        }
+
+        public int DeleteList(IEnumerable<Organization> organizations)
+        {
+            return _orgnationGetway.DeleteList(organizations);
         }
     }
 }

@@ -1,54 +1,71 @@
 ﻿using AssetDatabaseContextLibrary;
-using OrganizationModelsLibrary;
+using Organization.Infrastucture.Library.UnitOfWorks;
 using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
 
 namespace OrgnationGetwaysLibrary
 {
     public class OrgnationGetway
     {
-        private readonly AssetDbContext db = new AssetDbContext();
+        private readonly OrgnationUnitOfWork _orgnationUnitOfWork = new OrgnationUnitOfWork(new AssetDbContext());
 
-        public int Save(Organization aOrganization)
+        public OrganizationModelsLibrary.Organization GetOrganizationById(int id)
         {
-            db.Organizations.Add(aOrganization);
-            return db.SaveChanges();
+            return _orgnationUnitOfWork.Orgnation.Get(id);
         }
 
-        public int Update(Organization aOrganization)
+        public OrganizationModelsLibrary.Organization FindOrganizationById(int id)
         {
-            db.Entry(aOrganization).State = EntityState.Modified;
-            return db.SaveChanges();
+            return _orgnationUnitOfWork.Orgnation.SingleOrDefault(c => c.Id == id);
         }
 
-        public Organization FindOrganizationById(int? id)
+        public OrganizationModelsLibrary.Organization FindOrganizationByShortName(string shortName)
         {
-            var aOrganization = db.Organizations.FirstOrDefault(c => c.Id == id);
-            return aOrganization;
+            return _orgnationUnitOfWork.Orgnation.SingleOrDefault(c => c.ShortName == shortName);
         }
 
-        public Organization FindOrganizationByName(string name)
+        public IEnumerable<OrganizationModelsLibrary.Organization> FindOrganizationByName(string name)
         {
-            var aOrgnation = db.Organizations.FirstOrDefault(organization => organization.Name == name);
-            return aOrgnation;
+            return _orgnationUnitOfWork.Orgnation.Find(c => c.Name == name || c.ShortName == name);
         }
 
-        public Organization FindOrganizationByShortName(string shortName)
+
+        public IEnumerable<OrganizationModelsLibrary.Organization> GetAllOrganizations()
         {
-            var aOrgnation = db.Organizations.FirstOrDefault(organization => organization.ShortName == shortName);
-            return aOrgnation;
+            return _orgnationUnitOfWork.Orgnation.GetAll();
         }
 
-        public List<Organization> GetOrganizationsByNameOrShortName(string searchInput)
+
+        // save
+        public int Save(OrganizationModelsLibrary.Organization aOrganization)
         {
-            var aOrgnation = db.Organizations.Where(c => c.Name == searchInput || c.ShortName == searchInput).ToList();
-            return aOrgnation;
+            _orgnationUnitOfWork.Orgnation.Add(aOrganization);
+            return _orgnationUnitOfWork.Complete();
         }
 
-        public List<Organization> GetAllOrganization()
+        public int SaveList(IEnumerable<OrganizationModelsLibrary.Organization> organizations)
         {
-            return db.Organizations.ToList();
+            _orgnationUnitOfWork.Orgnation.AddRange(organizations);
+            return _orgnationUnitOfWork.Complete();
+        }
+
+        // update
+        public int Update(OrganizationModelsLibrary.Organization aOrganization)
+        {
+            _orgnationUnitOfWork.Orgnation.Update(aOrganization);
+            return _orgnationUnitOfWork.Complete();
+        }
+
+        //delete
+        public int Delete(OrganizationModelsLibrary.Organization aOrganization)
+        {
+            _orgnationUnitOfWork.Orgnation.Remove(aOrganization);
+            return _orgnationUnitOfWork.Complete();
+        }
+
+        public int DeleteList(IEnumerable<OrganizationModelsLibrary.Organization> organizations)
+        {
+            _orgnationUnitOfWork.Orgnation.RemoveRange(organizations);
+            return _orgnationUnitOfWork.Complete();
         }
     }
 }
