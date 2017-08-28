@@ -3,7 +3,7 @@ using Core.Repository.Library.Core;
 
 namespace AssetModelsLibrary.Repositorys.AssetSetup
 {
-    public interface IAssetModel : IRepository<AssetModel>
+    public interface IAssetModelRepository : IRepository<AssetModel>
     {
     }
 }

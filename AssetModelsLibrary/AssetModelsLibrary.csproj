@@ -61,15 +61,15 @@
     <Compile Include="AssetSetup\AssetType.cs" />
     <Compile Include="AssetEntrys\Finance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositorys\AssetEntrys\IAssetEntry.cs" />
-    <Compile Include="Repositorys\AssetEntrys\IAttchment.cs" />
-    <Compile Include="Repositorys\AssetEntrys\IFinance.cs" />
-    <Compile Include="Repositorys\AssetEntrys\INote.cs" />
-    <Compile Include="Repositorys\AssetSetup\IAssetGroup.cs" />
-    <Compile Include="Repositorys\AssetSetup\IAssetLocation.cs" />
-    <Compile Include="Repositorys\AssetSetup\IAssetManufacturer.cs" />
-    <Compile Include="Repositorys\AssetSetup\IAssetModel.cs" />
-    <Compile Include="Repositorys\AssetSetup\IAssetType.cs" />
+    <Compile Include="Repositorys\AssetEntrys\IAssetEntryRepository.cs" />
+    <Compile Include="Repositorys\AssetEntrys\IAttchmentRepository.cs" />
+    <Compile Include="Repositorys\AssetEntrys\IFinanceRepository.cs" />
+    <Compile Include="Repositorys\AssetEntrys\INoteRepository.cs" />
+    <Compile Include="Repositorys\AssetSetup\IAssetGroupRepository.cs" />
+    <Compile Include="Repositorys\AssetSetup\IAssetLocationRepository.cs" />
+    <Compile Include="Repositorys\AssetSetup\IAssetManufacturerRepository.cs" />
+    <Compile Include="Repositorys\AssetSetup\IAssetModelRepository.cs" />
+    <Compile Include="Repositorys\AssetSetup\IAssetTypeRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core.Repository.Library\Core.Repository.Library.csproj">

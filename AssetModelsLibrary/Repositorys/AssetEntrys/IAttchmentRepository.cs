@@ -2,7 +2,7 @@
 
 namespace AssetModelsLibrary.Repositorys.AssetEntrys
 {
-    public interface IAttchment : IRepository<AssetModelsLibrary.AssetEntrys.Attchment>
+    public interface IAttchmentRepository : IRepository<AssetModelsLibrary.AssetEntrys.Attchment>
     {
     }
 }
