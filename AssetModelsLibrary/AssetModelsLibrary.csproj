@@ -70,6 +70,8 @@
     <Compile Include="Repositorys\AssetSetup\IAssetManufacturerRepository.cs" />
     <Compile Include="Repositorys\AssetSetup\IAssetModelRepository.cs" />
     <Compile Include="Repositorys\AssetSetup\IAssetTypeRepository.cs" />
+    <Compile Include="UnitOfWorks\IAssetEntryUnitOfWork.cs" />
+    <Compile Include="UnitOfWorks\IAssetSetupUnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core.Repository.Library\Core.Repository.Library.csproj">
@@ -89,9 +91,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UnitOfWorks\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
