@@ -53,15 +53,24 @@
     <Compile Include="Designation.cs" />
     <Compile Include="Organization.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorys\IBranchRepository.cs" />
+    <Compile Include="Repositorys\IDepartmentRepository.cs" />
+    <Compile Include="Repositorys\IDesignationRepository.cs" />
+    <Compile Include="Repositorys\IOrganizationRepository.cs" />
+    <Compile Include="UnitOfWorks\IDepartmentDesignationUnitOfWork.cs" />
+    <Compile Include="UnitOfWorks\IOrgnationUnitOfWork.cs" />
     <Compile Include="Vendor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Repositorys\" />
-    <Folder Include="UnitOfWorks\" />
+    <ProjectReference Include="..\Core.Repository.Library\Core.Repository.Library.csproj">
+      <Project>{9e69edbc-6c37-4687-8192-4dd6bb097889}</Project>
+      <Name>Core.Repository.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

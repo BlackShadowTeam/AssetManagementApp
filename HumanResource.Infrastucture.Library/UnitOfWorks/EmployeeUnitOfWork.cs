@@ -7,21 +7,21 @@ namespace HumanResource.Infrastucture.Library.UnitOfWorks
 {
     public class EmployeeUnitOfWork : IEmployeeUnitOfWork
     {
-        public readonly AssetDbContext _Context;
+        private readonly AssetDbContext _context;
 
         public EmployeeUnitOfWork(AssetDbContext context)
         {
-            _Context = context;
-            Employee = new EmployeeRepository(_Context);
+            _context = context;
+            Employee = new EmployeeRepository(_context);
         }
         public void Dispose()
         {
-            _Context.Dispose();
+            _context.Dispose();
         }
 
         public int Complete()
         {
-            return _Context.SaveChanges();
+            return _context.SaveChanges();
         }
 
         public IEmployeeRepository Employee { get; set; }
