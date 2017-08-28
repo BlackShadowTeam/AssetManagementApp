@@ -5,7 +5,7 @@ namespace OrganizationModelsLibrary.UnitOfWorks
 {
     public interface IOrgnationUnitOfWork : IUnitOfWork
     {
-        IOrgnationUnitOfWork Orgnation { get; set; }
+        IOrganizationRepository Orgnation { get; set; }
         IBranchRepository Branch { get; set; }
     }
 }

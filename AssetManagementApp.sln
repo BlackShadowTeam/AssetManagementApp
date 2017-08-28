@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asset.Infrastucture.Library
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanResource.Infrastucture.Library", "HumanResource.Infrastucture.Library\HumanResource.Infrastucture.Library.csproj", "{71072631-126C-4D60-98DB-D1D99EDA983F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Organization.Infrastucture.Library", "Organization.Infrastucture.Library\Organization.Infrastucture.Library.csproj", "{69C19263-4D94-4301-871A-956B0FC993BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{71072631-126C-4D60-98DB-D1D99EDA983F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71072631-126C-4D60-98DB-D1D99EDA983F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71072631-126C-4D60-98DB-D1D99EDA983F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69C19263-4D94-4301-871A-956B0FC993BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C19263-4D94-4301-871A-956B0FC993BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C19263-4D94-4301-871A-956B0FC993BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C19263-4D94-4301-871A-956B0FC993BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -98,5 +104,6 @@ Global
 		{9E69EDBC-6C37-4687-8192-4DD6BB097889} = {126E2C56-32D4-4080-9F99-5EB50167D5EA}
 		{1CB5F661-FB9C-473F-A26F-BC6C66BC83C2} = {32E69AA7-E1DA-4C63-8A24-03B02FDD05F7}
 		{71072631-126C-4D60-98DB-D1D99EDA983F} = {32E69AA7-E1DA-4C63-8A24-03B02FDD05F7}
+		{69C19263-4D94-4301-871A-956B0FC993BA} = {32E69AA7-E1DA-4C63-8A24-03B02FDD05F7}
 	EndGlobalSection
 EndGlobal
