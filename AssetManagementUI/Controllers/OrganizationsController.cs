@@ -1,24 +1,24 @@
-﻿using System.Web.Mvc;
-using System.Web.UI.WebControls.WebParts;
-using OrganizationModelsLibrary;
+﻿using OrganizationModelsLibrary;
 using OrgnationManagersLibrary;
+using System.Web.Mvc;
 
 namespace AssetManagementUI.Controllers
 {
     public class OrganizationsController : Controller
     {
-       private readonly OrgnationManager _orgnationManager=new OrgnationManager();
-        
+        private readonly OrgnationManager _orgnationManager = new OrgnationManager();
+
         // GET: Organizations
         public ActionResult Index()
         {
-            return View();
+            var orgnationList = _orgnationManager.GetAllOrganization();
+            return View(orgnationList);
         }
 
         [HttpGet]
         public PartialViewResult Create()
         {
-            return PartialView("PartialView/Organizations/_CreatePartial" );
+            return PartialView("PartialView/Organizations/_CreatePartial");
         }
 
         [HttpPost]
@@ -28,24 +28,66 @@ namespace AssetManagementUI.Controllers
         {
             if (ModelState.IsValid)
             {
-                int rowAffected = _orgnationManager.Save(aOrganization);
-                if (rowAffected>0)
+                bool isShortNameExist = _orgnationManager.IsShortNameExist(aOrganization.ShortName);
+
+                if (isShortNameExist)
                 {
-                    return PartialView("PartialView/Organizations/_CreatePartial");
+                    ViewBag.Message = "This Organization Short Name Already Exist in Database";
                 }
+                else
+                {
+                    int successCount = _orgnationManager.Save(aOrganization);
+                    if (successCount > 0)
+                    {
+                        ViewBag.Message = "Organation Successfully Save in Database";
+                        ViewBag.Success = 1;
+                    }
+                    else
+                    {
+                        ViewBag.Message = "Organation Save Fail";
+                        ViewBag.Success = 0;
+                    }
+
+                }
+                return PartialView("PartialView/Organizations/_CreatePartial");
+
             }
             return View("Index");
+            //return PartialView("PartialView/Organizations/_CreatePartial");
         }
 
-        public string FindById()
+
+        public JsonResult Save(Organization aOrganization)
         {
-            string name="";
-            var orgnation = _orgnationManager.FindOrganizationById(1);
-            if (orgnation != null)
+            if (ModelState.IsValid)
             {
-                name = orgnation.Name;
+                bool isShortNameExist = _orgnationManager.IsShortNameExist(aOrganization.ShortName);
+
+                if (isShortNameExist)
+                {
+                    ViewBag.Message = "This Organization Short Name Already Exist in Database";
+                }
+                else
+                {
+                    int successCount = _orgnationManager.Save(aOrganization);
+                    if (successCount > 0)
+                    {
+
+                        ViewBag.Message = "Organation Successfully Save in Database";
+                        ViewBag.Success = 1;
+                        return Json(successCount, JsonRequestBehavior.AllowGet);
+                    }
+                    else
+                    {
+                        ViewBag.Message = "Organation Save Fail";
+                        ViewBag.Success = 0;
+                        return Json(0, JsonRequestBehavior.AllowGet);
+                    }
+
+                }
             }
-            return name;
+            return Json(0, JsonRequestBehavior.AllowGet);
         }
+
     }
 }

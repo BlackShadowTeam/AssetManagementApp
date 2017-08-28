@@ -52,6 +52,7 @@
     <Compile Include="AssetEntrys\Attchment.cs" />
     <Compile Include="AssetEntrys\Note.cs" />
     <Compile Include="AssetEntrys\ServiceOrRepairing.cs" />
+    <Compile Include="AssetOpetation\CheckIn.cs" />
     <Compile Include="AssetOpetation\CheckOut.cs" />
     <Compile Include="AssetSetup\AssetGroup.cs" />
     <Compile Include="AssetSetup\AssetLocation.cs" />
