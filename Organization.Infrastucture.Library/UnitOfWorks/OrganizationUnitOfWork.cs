@@ -5,11 +5,11 @@ using OrganizationModelsLibrary.UnitOfWorks;
 
 namespace Organization.Infrastucture.Library.UnitOfWorks
 {
-    public class OrgnationUnitOfWork : IOrgnationUnitOfWork
+    public class OrganizationUnitOfWork : IOrgnationUnitOfWork
     {
         private readonly AssetDbContext _context;
 
-        public OrgnationUnitOfWork(AssetDbContext context)
+        public OrganizationUnitOfWork(AssetDbContext context)
         {
             _context = context;
             Orgnation = new OrganizationRepository(_context);

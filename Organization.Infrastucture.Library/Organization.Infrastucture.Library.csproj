@@ -54,7 +54,7 @@
     <Compile Include="Repositorys\DesignationRepository.cs" />
     <Compile Include="Repositorys\OrganizationRepository.cs" />
     <Compile Include="UnitOfWorks\DepartmentDesignationUnitOfWork.cs" />
-    <Compile Include="UnitOfWorks\OrgnationUnitOfWork.cs" />
+    <Compile Include="UnitOfWorks\OrganizationUnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AssetDatabaseContextLibrary\AssetDatabaseContextLibrary.csproj">

@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace OrgnationGetwaysLibrary
 {
-    public class OrgnationGetway
+    public class OrganizationGetway
     {
-        private readonly OrgnationUnitOfWork _orgnationUnitOfWork = new OrgnationUnitOfWork(new AssetDbContext());
+        private readonly OrganizationUnitOfWork _orgnationUnitOfWork = new OrganizationUnitOfWork(new AssetDbContext());
 
         public OrganizationModelsLibrary.Organization GetOrganizationById(int id)
         {

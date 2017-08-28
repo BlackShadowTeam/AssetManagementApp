@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 namespace OrgnationManagersLibrary
 {
-    public class OrgnationManager
+    public class OrganizationManager
     {
-        private readonly OrgnationGetway _orgnationGetway = new OrgnationGetway();
+        private readonly OrganizationGetway _orgnationGetway = new OrganizationGetway();
 
 
         public bool IsShortNameExist(string shortName)

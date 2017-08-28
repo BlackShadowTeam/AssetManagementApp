@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BranchGetway.cs" />
-    <Compile Include="OrgnationGetway.cs" />
+    <Compile Include="OrganizationGetway.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

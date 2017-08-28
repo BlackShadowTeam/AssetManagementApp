@@ -6,7 +6,7 @@ namespace AssetManagementUI.Controllers
 {
     public class OrganizationsController : Controller
     {
-        private readonly OrgnationManager _orgnationManager = new OrgnationManager();
+        private readonly OrganizationManager _orgnationManager = new OrganizationManager();
 
         // GET: Organizations
         public ActionResult Index()
