@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanResource.Manager.Libra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanResource.Getway.Library", "HumanResource.Getway.Library\HumanResource.Getway.Library.csproj", "{57386D60-890F-4ED1-A7BA-1FDC5D47407E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asset.Getway.Library", "Asset.Getway.Library\Asset.Getway.Library.csproj", "{54B87B23-988F-41CC-BC2A-89ADAD6ED656}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +103,10 @@ Global
 		{57386D60-890F-4ED1-A7BA-1FDC5D47407E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57386D60-890F-4ED1-A7BA-1FDC5D47407E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57386D60-890F-4ED1-A7BA-1FDC5D47407E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54B87B23-988F-41CC-BC2A-89ADAD6ED656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54B87B23-988F-41CC-BC2A-89ADAD6ED656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54B87B23-988F-41CC-BC2A-89ADAD6ED656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54B87B23-988F-41CC-BC2A-89ADAD6ED656}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -119,5 +125,6 @@ Global
 		{69C19263-4D94-4301-871A-956B0FC993BA} = {32E69AA7-E1DA-4C63-8A24-03B02FDD05F7}
 		{DBD4D5DC-3212-4FEF-B39E-95CEA3348357} = {8B2AFCF3-19DF-4153-8FAD-A1FF6D5DD21E}
 		{57386D60-890F-4ED1-A7BA-1FDC5D47407E} = {7670E72F-45E6-4903-AD7B-AC37D1FCF28B}
+		{54B87B23-988F-41CC-BC2A-89ADAD6ED656} = {7670E72F-45E6-4903-AD7B-AC37D1FCF28B}
 	EndGlobalSection
 EndGlobal
