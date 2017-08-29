@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BranchManager.cs" />
+    <Compile Include="DepartmentManager.cs" />
     <Compile Include="OrganizationManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
