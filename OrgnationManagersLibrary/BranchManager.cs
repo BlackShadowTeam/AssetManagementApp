@@ -8,11 +8,11 @@ namespace OrgnationManagersLibrary
     {
         private readonly BranchGetway _branchGetway = new BranchGetway();
 
-        public bool IsShortNameExist(int? organizationId, string shortName)
+        public bool IsShortNameExist(int organizationId, string shortName)
         {
             bool isShortNameExist = false;
 
-            var aBranch = FindBranchByOrganizationAndShortName(organizationId, shortName);
+            var aBranch = FindSingleBranchByOrgnationAndShortName(organizationId, shortName);
             if (aBranch != null)
             {
                 isShortNameExist = true;
@@ -30,38 +30,19 @@ namespace OrgnationManagersLibrary
             return _branchGetway.Update(aBranch);
         }
 
-        public Branch FindBranchById(int? id)
+        public Branch FindBranchById(int id)
         {
-            return _branchGetway.FindBranchById(id);
+            return _branchGetway.FindSingleBranchById(id);
         }
 
-        public Branch FindBranchByName(string name)
+        public Branch FindSingleBranchByOrgnationAndShortName(int organizationId, string shortName)
         {
-            return _branchGetway.FindBranchByName(name);
+            return _branchGetway.FindSingleBranchByOrgnationAndShortName(organizationId, shortName);
         }
 
-        public Branch FindBranchByShortName(string shortName)
+        public IEnumerable<Branch> GetAllBRanches()
         {
-            return _branchGetway.FindBranchByShortName(shortName);
-        }
-
-        public Branch FindBranchByOrganizationAndShortName(int? organizationId, string shortName)
-        {
-            return _branchGetway.FindBranchByOrganizationAndShortName(organizationId, shortName);
-        }
-        public List<Branch> GetBranchByNameOrShortName(string searchInput)
-        {
-            return _branchGetway.GetBranchByNameOrShortName(searchInput);
-        }
-
-        public List<Branch> GetBranchesByOrganizationId(int? organizationId)
-        {
-            return _branchGetway.GetBranchesByOrganizationId(organizationId);
-        }
-
-        public List<Branch> GetAllBRanches()
-        {
-            return _branchGetway.GetAllBRanches();
+            return _branchGetway.GetAllBranches();
         }
     }
 }

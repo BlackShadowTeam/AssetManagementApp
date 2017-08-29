@@ -1,5 +1,4 @@
-﻿
-using OrganizationModelsLibrary;
+﻿using OrganizationModelsLibrary;
 using OrgnationGetwaysLibrary;
 using System.Collections.Generic;
 

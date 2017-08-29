@@ -1,65 +1,72 @@
 ﻿using AssetDatabaseContextLibrary;
+using Organization.Infrastucture.Library.UnitOfWorks;
 using OrganizationModelsLibrary;
 using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
 
 namespace OrgnationGetwaysLibrary
 {
     public class BranchGetway
     {
-        private readonly AssetDbContext db = new AssetDbContext();
+        private readonly OrganizationUnitOfWork _organizationUnitOfWork = new OrganizationUnitOfWork(new AssetDbContext());
+
 
         public int Save(Branch aBranch)
         {
-            db.Branches.Add(aBranch);
-            return db.SaveChanges();
+            _organizationUnitOfWork.Branch.Add(aBranch);
+            return _organizationUnitOfWork.Complete();
+        }
+
+        public int SaveList(IEnumerable<Branch> branches)
+        {
+            _organizationUnitOfWork.Branch.AddRange(branches);
+            return _organizationUnitOfWork.Complete();
         }
 
         public int Update(Branch aBranch)
         {
-            db.Entry(aBranch).State = EntityState.Modified;
-            return db.SaveChanges();
+            _organizationUnitOfWork.Branch.Update(aBranch);
+            return _organizationUnitOfWork.Complete();
         }
 
-        public Branch FindBranchById(int? id)
+
+        public int Delete(Branch aBranch)
         {
-            var aBranch = db.Branches.FirstOrDefault(c => c.Id == id);
-            return aBranch;
+            _organizationUnitOfWork.Branch.Remove(aBranch);
+            return _organizationUnitOfWork.Complete();
         }
 
-        public Branch FindBranchByName(string name)
+        public int DeleteList(IEnumerable<Branch> branches)
         {
-            var aBranch = db.Branches.FirstOrDefault(branch => branch.Name == name);
-            return aBranch;
+            _organizationUnitOfWork.Branch.RemoveRange(branches);
+            return _organizationUnitOfWork.Complete();
         }
 
-        public Branch FindBranchByShortName(string shortName)
+        public Branch GetBranch(int id)
         {
-            var aBranch = db.Branches.FirstOrDefault(branch => branch.ShortName == shortName);
-            return aBranch;
+            return _organizationUnitOfWork.Branch.Get(id);
         }
 
-        public Branch FindBranchByOrganizationAndShortName(int? organizationId, string shortName)
+        public Branch FindSingleBranchById(int id)
         {
-            var aBranch = db.Branches.FirstOrDefault(c => c.OrganizationId == organizationId && c.ShortName == shortName);
-            return aBranch;
-        }
-        public List<Branch> GetBranchByNameOrShortName(string searchInput)
-        {
-            var branchList = db.Branches.Where(c => c.Name == searchInput || c.ShortName == searchInput).ToList();
-            return branchList;
+            return _organizationUnitOfWork.Branch.SingleOrDefault(c => c.Id == id);
         }
 
-        public List<Branch> GetBranchesByOrganizationId(int? organizationId)
+        public Branch FindSingleBranchByOrgnationAndShortName(int organizationId, string shortName)
         {
-            var branchList = db.Branches.Where(c => c.OrganizationId == organizationId).ToList();
-            return branchList;
+            return
+                _organizationUnitOfWork.Branch.SingleOrDefault(
+                    c => c.OrganizationId == organizationId && c.ShortName == shortName);
         }
 
-        public List<Branch> GetAllBRanches()
+        public IEnumerable<Branch> FindBranchesByName(string name)
         {
-            return db.Branches.ToList();
+            return _organizationUnitOfWork.Branch.Find(c => c.Name == name || c.ShortName == name);
+        }
+
+
+        public IEnumerable<Branch> GetAllBranches()
+        {
+            return _organizationUnitOfWork.Branch.GetAll();
         }
     }
 }
