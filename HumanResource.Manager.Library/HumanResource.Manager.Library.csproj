@@ -39,7 +39,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmployeeManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HumanResource.Getway.Library\HumanResource.Getway.Library.csproj">
+      <Project>{57386d60-890f-4ed1-a7ba-1fdc5d47407e}</Project>
+      <Name>HumanResource.Getway.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HumanResourceModelsLibrary\HumanResourceModelsLibrary.csproj">
+      <Project>{08c1ae5d-2fe8-482e-b137-5dbc21de589e}</Project>
+      <Name>HumanResourceModelsLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

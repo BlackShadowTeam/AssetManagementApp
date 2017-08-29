@@ -26,7 +26,7 @@ namespace HumanResource.Getway.Library
         }
 
         // Find
-        public IEnumerable<Employee> FindEmployeesByName(string contactNo)
+        public IEnumerable<Employee> FindEmployeesByContactNo(string contactNo)
         {
             return _employeeUnitOfWork.Employee.Find(c => c.ContactNo == contactNo);
         }
@@ -58,10 +58,12 @@ namespace HumanResource.Getway.Library
             return _employeeUnitOfWork.Complete();
         }
 
-        public int DleteList(IEnumerable<Employee> employees)
+        public int DeleteList(IEnumerable<Employee> employees)
         {
             _employeeUnitOfWork.Employee.RemoveRange(employees);
             return _employeeUnitOfWork.Complete();
         }
+
+
     }
 }
