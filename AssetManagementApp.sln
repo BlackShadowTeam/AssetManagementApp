@@ -39,6 +39,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanResource.Infrastucture
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Organization.Infrastucture.Library", "Organization.Infrastucture.Library\Organization.Infrastucture.Library.csproj", "{69C19263-4D94-4301-871A-956B0FC993BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanResource.Manager.Library", "HumanResource.Manager.Library\HumanResource.Manager.Library.csproj", "{DBD4D5DC-3212-4FEF-B39E-95CEA3348357}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanResource.Getway.Library", "HumanResource.Getway.Library\HumanResource.Getway.Library.csproj", "{57386D60-890F-4ED1-A7BA-1FDC5D47407E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +93,14 @@ Global
 		{69C19263-4D94-4301-871A-956B0FC993BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69C19263-4D94-4301-871A-956B0FC993BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69C19263-4D94-4301-871A-956B0FC993BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBD4D5DC-3212-4FEF-B39E-95CEA3348357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD4D5DC-3212-4FEF-B39E-95CEA3348357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD4D5DC-3212-4FEF-B39E-95CEA3348357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD4D5DC-3212-4FEF-B39E-95CEA3348357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57386D60-890F-4ED1-A7BA-1FDC5D47407E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57386D60-890F-4ED1-A7BA-1FDC5D47407E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57386D60-890F-4ED1-A7BA-1FDC5D47407E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57386D60-890F-4ED1-A7BA-1FDC5D47407E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,5 +117,7 @@ Global
 		{1CB5F661-FB9C-473F-A26F-BC6C66BC83C2} = {32E69AA7-E1DA-4C63-8A24-03B02FDD05F7}
 		{71072631-126C-4D60-98DB-D1D99EDA983F} = {32E69AA7-E1DA-4C63-8A24-03B02FDD05F7}
 		{69C19263-4D94-4301-871A-956B0FC993BA} = {32E69AA7-E1DA-4C63-8A24-03B02FDD05F7}
+		{DBD4D5DC-3212-4FEF-B39E-95CEA3348357} = {8B2AFCF3-19DF-4153-8FAD-A1FF6D5DD21E}
+		{57386D60-890F-4ED1-A7BA-1FDC5D47407E} = {7670E72F-45E6-4903-AD7B-AC37D1FCF28B}
 	EndGlobalSection
 EndGlobal
