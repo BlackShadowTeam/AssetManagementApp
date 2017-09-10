@@ -15,23 +15,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetManagementUI", "AssetM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrgnationManagersLibrary", "OrgnationManagersLibrary\OrgnationManagersLibrary.csproj", "{9B587512-325B-4A08-BBEF-7B55F090E931}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 User Interfaces", "07 User Interfaces", "{EDEE00BE-614B-4215-A72C-D25531C7FDC4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 User Interfaces", "01 User Interfaces", "{EDEE00BE-614B-4215-A72C-D25531C7FDC4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Infrastucture", "03 Infrastucture", "{32E69AA7-E1DA-4C63-8A24-03B02FDD05F7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Infrastucture", "05 Infrastucture", "{32E69AA7-E1DA-4C63-8A24-03B02FDD05F7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Business Logic Layers", "06 Business Logic Layers", "{8B2AFCF3-19DF-4153-8FAD-A1FF6D5DD21E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Business Logic Layers", "02 Business Logic Layers", "{8B2AFCF3-19DF-4153-8FAD-A1FF6D5DD21E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 Data Access Layers", "04 Data Access Layers", "{7670E72F-45E6-4903-AD7B-AC37D1FCF28B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetDatabaseContextLibrary", "AssetDatabaseContextLibrary\AssetDatabaseContextLibrary.csproj", "{65A19118-CF39-4D3D-9AC2-71FE50B842D4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Core", "01 Core", "{126E2C56-32D4-4080-9F99-5EB50167D5EA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07 Core", "07 Core", "{126E2C56-32D4-4080-9F99-5EB50167D5EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Repository.Library", "Core.Repository.Library\Core.Repository.Library.csproj", "{9E69EDBC-6C37-4687-8192-4DD6BB097889}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Asset Core", "02 Asset Core", "{667C9DFB-860F-4064-A9A5-22E1FC10804B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 Asset Core", "06 Asset Core", "{667C9DFB-860F-4064-A9A5-22E1FC10804B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 Test", "05 Test", "{52E90FA9-03C0-4331-B9B1-F24906CC609F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 Test", "03 Test", "{52E90FA9-03C0-4331-B9B1-F24906CC609F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asset.Infrastucture.Library", "Asset.Infrastucture.Library\Asset.Infrastucture.Library.csproj", "{1CB5F661-FB9C-473F-A26F-BC6C66BC83C2}"
 EndProject
